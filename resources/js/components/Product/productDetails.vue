@@ -99,11 +99,11 @@
             <tr>
               <td class="pl-0">
                 <div class="flex form-check-inline mb-0 ml-0">
-                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                  <button @click="quant--"
                     class="minus btn btn-default mr-3"></button>
                   <input type="number" name="quant" v-model="quant" style="width: 50px;" min="0" 
                   value="1">
-                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  <button @click="quant++"
                     class="plus btn btn-default ml-3"></button>
                 </div>
               </td>
